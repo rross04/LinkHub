@@ -103,10 +103,14 @@ export default function App() {
         </section>
       )}
 
+      <section className="navbar">
+        <span className="navbar__brand">LinkHub</span>
+        <img src="/icons/logo1.png" alt="Logo" className="navbar_Logo" />
+      </section>
+
       {/* Barra de búsqueda + botón agregar */}
       <section className="toolbar">
         <div className="toolbar__search">
-          <img src="/icons/logo1.png" alt="Logo" className="toolbar__search-icon" />
           <input
             type="search"
             placeholder="Buscar"

@@ -122,7 +122,7 @@ html.light {
   --modal-cancel-color: #6b7280;
 
   --empty-state-border: rgba(139, 92, 246, 0.5);
-  --empty-state-bg: rgba(214, 205, 255, 0.56);
+  --empty-state-bg: rgba(188, 171, 255, 0.263);
   --add-btn-border: #6634bcb3;
   --add-btn-bg: #ede9feb0;
   --add-btn-color: #7841c9;
@@ -251,9 +251,17 @@ input {
   box-shadow: 0 18px 30px 0 rgba(59, 130, 246, 0.25);
 }
 
+.primary-btn:disabled {
+  background: linear-gradient(135deg, #5a3a7a, #2a7a8a); /* mismo gradiente pero apagado */
+  color: rgba(255, 255, 255, 0.705);
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.5;
+  }
+
 .primary-btn:active:not(:disabled) {
   transform: translateY(-1px);
-  box-shadow: 0 12px 20px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 12px 20px rgba(42, 255, 255, 0.645);
 }
 
 .primary-btn:hover:not(:disabled) {
@@ -282,6 +290,44 @@ input {
   color: var(--chip-active-color);
 }
 
+
+/* ══════════════════════════════════════════════
+   NAVBAR
+   ══════════════════════════════════════════════ */
+.navbar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-wrap: nowrap;
+  background: rgba(115, 4, 171, 0.353);
+  border-radius: 60px;
+}
+
+.navbar__brand {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff; 
+}
+.navbar_Logo {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  animation: spinPulse 6s ease-in-out infinite;
+}
+@keyframes spinPulse {
+  0%   { transform: rotate(0deg) scale(1); }
+  25%  { transform: rotate(10deg) scale(1.1); }
+  50%  { transform: rotate(0deg) scale(1); }
+  75%  { transform: rotate(-10deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
 /* ══════════════════════════════════════════════
    TOOLBAR
    ══════════════════════════════════════════════ */
@@ -301,20 +347,11 @@ input {
   width: 400px;
 }
 
-.toolbar__search-icon {
-  position: absolute;
-  left: 0.85rem;
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  pointer-events: none;
-}
-
 .toolbar input {
   width: 100%;
   border: 1px solid var(--input-border);
-  border-radius: 12px;
-  padding: 1rem 1.1rem 1rem 3.3rem;
+  border-radius: 10px;
+  padding: 1rem 1.1rem 1rem 1rem;
   color: var(--input-color);
   background: var(--input-bg);
   outline: none;

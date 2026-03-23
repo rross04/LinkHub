@@ -88,8 +88,8 @@ export default function App() {
             </div>
             <h1>Accesos rápidos para el día-a-día</h1>
             <p>
-              Centraliza las herramientas que utiliza frecuentemente en una sola ventana útil
-              para anclar al escritorio o barra de tareas.
+              Centraliza las herramientas que utiliza frecuentemente en una sola ventana. Útil
+              para anclar a la barra de tareas o instalar en su dispositivo móvil.
             </p>
           </div>
           <div className="hero__actions">
@@ -97,7 +97,7 @@ export default function App() {
               {installPrompt ? 'Instalar app' : 'App instalada o no disponible'}
             </button>
             <span className="helper-text">
-              Abra el sitio en Chrome o Edge para instalarlo como app.
+              En IOS, use el botón "Compartir" y luego "Agregar a pantalla de inicio".
             </span>
           </div>
         </section>

@@ -14,7 +14,7 @@
   --hero-p-color: #cbd5e1;
   --eyebrow-bg: rgba(59, 130, 246, 0.16);
   --eyebrow-color: #bfdbfe;
-  --helper-text-color: #94a3b8;
+  --helper-text-color: #cacacae3;
 
   /* Input / Search */
   --input-border: #59f7ffa7;
@@ -33,8 +33,8 @@
   /* Cards */
   --card-border: rgba(196, 100, 255, 0.268);
   --card-bg: rgba(172, 84, 255, 0.125);
-  --card-hover-border: #a578ff;
-  --card-hover-bg: rgba(131, 7, 255, 0.632);
+  --card-hover-border: #bf9fffd3;
+  --card-hover-bg: rgba(132, 8, 255, 0.793);
   --card-icon-bg: rgba(214, 91, 255, 0.23);
   --card-category-color: #93e4fd;
   --card-p-color: #cbd5e1;
@@ -88,10 +88,10 @@ html.light {
   --hero-p-color: #4b5563;
   --eyebrow-bg: rgba(139, 92, 246, 0.15);
   --eyebrow-color: #6d28d9;
-  --helper-text-color: #6b7280;
+  --helper-text-color: #919398;
 
   --input-border: #a36effbc;
-  --input-bg: #fefeff6e;
+  --input-bg: #fefeffcb;
   --input-color: #0b080f;
   --input-placeholder: #1e4955c8;
 
@@ -100,13 +100,13 @@ html.light {
   --chip-color: #4c1d95;
   --chip-active-bg: #6113cdd7;
   --chip-active-color: #ffffff;
-  --chip-active-border: #ece0ff;
+  --chip-active-border: #744ab86a;
 
-  --card-border: rgba(139, 92, 246, 0.3);
-  --card-bg: rgba(237, 233, 254, 0.7);
-  --card-hover-border: #7c3aed;
-  --card-hover-bg: rgba(139, 92, 246, 0.15);
-  --card-icon-bg: rgba(167, 139, 250, 0.3);
+  --card-border: rgba(160, 97, 255, 0.533);
+  --card-bg: #dec3ff95;
+  --card-hover-border: #bf9aff86;
+  --card-hover-bg: rgb(252, 251, 255);
+  --card-icon-bg: rgba(207, 144, 255, 0.599);
   --card-category-color: #0369a1;
   --card-p-color: #4b5563;
   --card-arrow-color: #6d28d9;
@@ -122,7 +122,7 @@ html.light {
   --modal-cancel-color: #6b7280;
 
   --empty-state-border: rgba(139, 92, 246, 0.5);
-  --empty-state-bg: rgba(237, 233, 254, 0.3);
+  --empty-state-bg: rgba(214, 205, 255, 0.56);
   --add-btn-border: #6634bcb3;
   --add-btn-bg: #ede9feb0;
   --add-btn-color: #7841c9;
